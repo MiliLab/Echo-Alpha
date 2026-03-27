@@ -15,8 +15,9 @@
 </h5>
 </div>
 
-Echo-α is an agentic multimodal reasoning framework for ultrasound interpretation, designed to unify visual grounding, detector evidence, and clinical reasoning within a single diagnostic paradigm.  
-It aims to support accurate, interpretable, and trustworthy ultrasound diagnosis by connecting low-level visual evidence with high-level clinical reasoning.
+## Overview
+
+Echo-α is an agentic multimodal reasoning framework for ultrasound interpretation, designed to unify visual grounding, detector evidence, and clinical reasoning within a single diagnostic paradigm. It is developed to bridge this gap by integrating grounded perception with agentic multimodal reasoning, enabling both precise visual understanding and clinically meaningful interpretation. It aims to support accurate, interpretable, and trustworthy ultrasound diagnosis by connecting low-level visual evidence with high-level clinical reasoning.
 
 ## Highlights
 
@@ -24,9 +25,6 @@ It aims to support accurate, interpretable, and trustworthy ultrasound diagnosis
 - 🧠 Agentic multimodal reasoning for diagnosis support
 - 🏥 Toward practical and trustworthy medical AI
 
-## Overview
-
-Echo-α is developed to bridge this gap by integrating grounded perception with agentic multimodal reasoning, enabling both precise visual understanding and clinically meaningful interpretation.
 
 ## News
 
