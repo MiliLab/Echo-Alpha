@@ -4,14 +4,15 @@
 
 <div align="center">
 <h5>
-<em>Jing Zhang<sup>1 † *</sup>, Wentao Jiang<sup>1 †</sup>, Tao Huang<sup>1</sup>, Zhiwei Wang<sup>1</sup>, Jianxin Liu<sup>2 *</sup>, Jian Chen<sup>2</sup>, Ping Ye<sup>2</sup>, Gang Wang<sup>3</sup>, Zengmao Wang<sup>1 *</sup>, Bo Du<sup>1 *</sup></em>
+<em>Jing Zhang<sup>1 *</sup>, Wentao Jiang<sup>1 *</sup>, Tao Huang<sup>1</sup>, Zhiwei Wang<sup>1</sup>, Jianxin Liu<sup>2 </sup>, Jian Chen<sup>2</sup>, Ping Ye<sup>2</sup>, Gang Wang<sup>3</sup>, Zengmao Wang<sup>1 </sup>, Bo Du<sup>1 </sup></em>, Dacheng Tao<sup>4 </sup></em>
 <br><br>
 <sup>1</sup> School of Computer Science, Wuhan University, China<br/>
-<sup>2</sup> Central Hospital of Wuhan, China<br/>
-<sup>3</sup> Taizhou Hospital of Zhejiang Province, China
+<sup>2</sup> The Central Hospital of Wuhan, China<br/>
+<sup>3</sup> Taizhou Hospital of Zhejiang Province, China<br/>
+<sup>4</sup> Nanyang Technological University， China
 </h5>
 <h5>
-<sup>†</sup> Equal contribution, <sup>*</sup> Corresponding author
+<sup>*</sup> Equal contribution
 </h5>
 </div>
 
@@ -23,7 +24,6 @@ Echo-α is an agentic multimodal reasoning framework for ultrasound interpretati
 
 - 🔍 Grounded ultrasound understanding with explicit visual evidence
 - 🧠 Agentic multimodal reasoning for diagnosis support
-- 🏥 Toward practical and trustworthy medical AI
 
 
 ## News
