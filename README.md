@@ -102,6 +102,8 @@ Echo-&alpha; is evaluated on renal and breast ultrasound benchmarks under a mult
 
 ### Grounding
 
+ <div align="center">
+
 | Split | Specialized Detector F1@0.5 | Direct MLLM + Tool F1@0.5 | Echo-Ground F1@0.5 |
 | :--- | ---: | ---: | ---: |
 | Renal Val | 69.70 | 56.56 | **70.78** |
@@ -109,7 +111,11 @@ Echo-&alpha; is evaluated on renal and breast ultrasound benchmarks under a mult
 | Breast Val | 46.68 | 36.61 | **50.37** |
 | Breast Test | 42.01 | 37.25 | **43.78** |
 
+</div>
+
 ### Diagnosis
+
+ <div align="center">
 
 | Split | Specialized Detector Acc. | Direct MLLM + Tool Acc. | Echo-Diag Acc. |
 | :--- | ---: | ---: | ---: |
@@ -118,8 +124,10 @@ Echo-&alpha; is evaluated on renal and breast ultrasound benchmarks under a mult
 | Breast Val | **51.41** | 37.71 | 48.75 |
 | Breast Test | 46.96 | 44.75 | **49.20** |
 
+</div>
+
 <div align="center">
-  <img src="figs/main-results.png" alt="Echo-alpha quantitative result summary" width="68%">
+  <img src="figs/main-results.png" alt="Echo-alpha quantitative result summary" width="42%">
   <p><em>Compact visualization of the main grounding and diagnosis results reported in the paper.</em></p>
 </div>
 
@@ -127,6 +135,8 @@ Echo-&alpha; is evaluated on renal and breast ultrasound benchmarks under a mult
 
 Replacing the renal detector with YOLO-family, LW-DETR-DINOv3, and RF-DETR-DINOv3 backbones shows that Echo-&alpha; consistently improves detector-only diagnosis. The gains are largest for weaker or sparser detectors and remain positive for stronger detectors.
 
+ <div align="center">
+   
 | Detector | Detector Acc. | Echo-&alpha; Acc. | Gain |
 | :--- | ---: | ---: | ---: |
 | YOLOv8 | 44.16 | 67.11 | +22.95 |
@@ -136,15 +146,12 @@ Replacing the renal detector with YOLO-family, LW-DETR-DINOv3, and RF-DETR-DINOv
 | YOLO12 | 66.85 | 72.35 | +5.50 |
 | YOLO11 | 68.99 | 71.14 | +2.15 |
 | Ours | **74.53** | **77.43** | +2.90 |
+   
+ </div>
 
 <div align="center">
-  <img src="figs/detector-ablation.png" alt="Detector-agnostic renal diagnosis ablation" width="80%">
+  <img src="figs/detector-ablation.png" alt="Detector-agnostic renal diagnosis ablation" width="50%">
   <p><em>Detector-only diagnosis versus Echo-&alpha; with the same detector evidence.</em></p>
-</div>
-
-<div align="center">
-  <img src="figs/diagnosis-trends.png" alt="Class-wise diagnosis trends" width="52%">
-  <p><em>Class-wise diagnosis trends across renal and breast ultrasound evaluation splits.</em></p>
 </div>
 
 ---
