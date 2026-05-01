@@ -15,7 +15,7 @@
 </div>
 
 <h5 align="center">
-<a href="https://arxiv.org/pdf/2604.05210"><img src="https://img.shields.io/badge/arXiv-2604.05210-b31b1b.svg"></a>
+<a href="https://arxiv.org/pdf/2604.28011"><img src="https://img.shields.io/badge/arXiv-2604.28011-b31b1b.svg"></a>
 <a href=""><img src="https://img.shields.io/badge/Task-Ultrasound_Interpretation-blue"></a>
 <a href=""><img src="https://img.shields.io/badge/Paradigm-Agentic_MLLM-green"></a>
 </h5>
@@ -171,7 +171,7 @@ If you find **Echo-&alpha;** useful for your research, please cite:
   title        = {Echo-alpha: Agentic Multimodal Reasoning for Ultrasound Interpretation},
   author       = {Zhang, Jing and Jiang, Wentao and Huang, Tao and Wang, Zhiwei and Liu, Jianxin and Chen, Jian and Ye, Ping and Wang, Gang and Wang, Zengmao and Du, Bo and Tao, Dacheng},
   year         = {2026},
-  journal={arXiv preprint arXiv:2604.05210},
+  journal={arXiv preprint arXiv:2604.28011},
 }
 ```
 
