@@ -16,14 +16,13 @@
 
 <h5 align="center">
 <a href="https://arxiv.org/pdf/2604.05210"><img src="https://img.shields.io/badge/arXiv-2604.05210-b31b1b.svg"></a>
-<a href=""><img src="https://img.shields.io/badge/Status-Coming_Soon-orange"></a>
 <a href=""><img src="https://img.shields.io/badge/Task-Ultrasound_Interpretation-blue"></a>
 <a href=""><img src="https://img.shields.io/badge/Paradigm-Agentic_MLLM-green"></a>
 </h5>
 
 **An invoke-and-reason ultrasound agent that coordinates organ-specific detector tools, verifies grounded visual evidence, and converts lesion-level observations into clinically meaningful diagnostic decisions.**
 
-[Overview](#overview) | [Highlights](#highlights) | [Framework](#framework) | [Training Recipe](#training-recipe) | [Main Results](#main-results) | [Case Study](#case-study) | [Release Plan](#release-plan) | [Citation](#citation)
+[Overview](#overview) | [Highlights](#highlights) | [Framework](#framework) | [Training Recipe](#training-recipe) | [Main Results](#main-results) | [Case Study](#case-study) | [Citation](#citation)
 
 </div>
 
@@ -51,19 +50,6 @@ Ultrasound interpretation requires both precise lesion localization and holistic
 * **Multi-center evaluation:** Renal and breast ultrasound benchmarks are evaluated with in-center validation and cross-center testing.
 * **Detector-agnostic behavior:** The agent improves diagnosis across multiple detector backbones, suggesting that learned tool use is not tied to a single detector.
 
-### At a Glance
-
-| Item | Description |
-| :--- | :--- |
-| **Input** | Ultrasound image + optional clinical context |
-| **Tool interface** | Organ-specific lesion detector with boxes, labels, confidence scores, and rendered feedback |
-| **Core output** | Grounded lesion evidence and final diagnostic category |
-| **Anatomical domains** | Renal ultrasound and breast ultrasound |
-| **Training stages** | Multi-task SFT followed by GRPO-based reinforcement learning |
-| **Model variants** | Echo-Ground for lesion anchoring; Echo-Diag for diagnosis |
-| **Evaluation protocol** | Same-center validation and cross-center testing |
-
----
 
 ## Framework
 
@@ -176,65 +162,16 @@ In a renal example, the raw MLLM favors a benign angiomyolipoma from a smaller b
 
 ---
 
-## Release Plan
-
-| Component | Status |
-| :--- | :--- |
-| Paper overview and figures | Available |
-| Inference code | Coming soon |
-| Model checkpoints | Coming soon |
-| Tool-calling interface | Coming soon |
-| Training scripts | Coming soon |
-| Dataset access instructions | Coming soon, subject to institutional and privacy constraints |
-
----
-
-## Repository Layout
-
-```text
-Echo-Alpha/
-├── README.md
-├── citation.bib
-└── figs/
-    ├── overview.png
-    ├── main-results.png
-    ├── detector-ablation.png
-    ├── diagnosis-trends.png
-    └── case-study.png
-```
-
----
-
 ## Citation
 
 If you find **Echo-&alpha;** useful for your research, please cite:
 
 ```bibtex
-@misc{zhang2026echoalpha,
+@article{echo-alpha,
   title        = {Echo-alpha: Agentic Multimodal Reasoning for Ultrasound Interpretation},
   author       = {Zhang, Jing and Jiang, Wentao and Huang, Tao and Wang, Zhiwei and Liu, Jianxin and Chen, Jian and Ye, Ping and Wang, Gang and Wang, Zengmao and Du, Bo and Tao, Dacheng},
   year         = {2026},
-  note         = {Under review},
-  howpublished = {\url{https://github.com/MiliLab/Echo-Alpha}}
+  journal={arXiv preprint arXiv:2604.05210},
 }
 ```
 
-The arXiv link provided for this repository currently resolves to the following BibTeX entry:
-
-```bibtex
-@misc{adil2026integrationobjectdetectionsmall,
-  title         = {Integration of Object Detection and Small VLMs for Construction Safety Hazard Identification},
-  author        = {Muhammad Adil and Mehmood Ahmed and Muhammad Aqib and Vicente A. Gonzalez and Gaang Lee and Qipei Mei},
-  year          = {2026},
-  eprint        = {2604.05210},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.CV},
-  url           = {https://arxiv.org/abs/2604.05210}
-}
-```
-
----
-
-<div align="center">
-<p>Maintained by the Echo-&alpha; Team</p>
-</div>
